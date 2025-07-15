@@ -151,10 +151,10 @@ This code is built upon [Hugging Face Diffusers](https://github.com/huggingface/
 If you find our work useful for your research, please consider citing our paper:
 
 ```bibtex
-@inproceedings{choi2025alg,
+@article{choi2025alg,
   title={Enhancing Motion Dynamics of Image-to-Video Models via Adaptive Low-Pass Guidance},
   author={Choi, June Suk and Lee, Kyungmin and Yu, Sihyun and Choi, Yisol and Shin, Jinwoo and Lee, Kimin},
   year={2025},
-  booktitle={arXiv preprint arXiv:2506.08456},
+  journal={arXiv preprint arXiv:2506.08456},
 }
 ```
