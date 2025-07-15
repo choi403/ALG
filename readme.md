@@ -11,6 +11,8 @@ Official implementation for [<u><b>Enhancing Motion Dynamics of Image-to-Video M
 <a href="https://alinlab.kaist.ac.kr/shin.html"><u>Jinwoo Shin</u></a>,
 <a href="https://sites.google.com/view/kiminlee"><u>Kimin Lee</u></a>
 
+https://github.com/user-attachments/assets/a1faada7-624a-4259-8b40-dcef50700346
+
 **Summary**: We propose **Adaptive Low-pass Guidance (ALG)**, a simple yet effective sampling method for pre-trained Image-to-Video (I2V) models. ALG mitigates the common issue of motion suppression by adaptively applying low-pass filtering to the conditioning image during the early stages of the denoising process. This encourages the generation of more dynamic videos without compromising the visual quality or fidelity to the input image.
 
 ## 1. Setup
