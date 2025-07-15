@@ -1,0 +1,13 @@
+accelerate==1.3.0
+huggingface-hub
+imageio-ffmpeg
+open_clip_torch
+openai-clip
+opencv-python
+peft==0.15.0
+sentencepiece
+torchvision
+transformers==4.48.1
+xformers==0.0.29.post1
+av==12.0.0
+diffusers @ git+https://github.com/huggingface/diffusers.git@be2fb77dc164083bf8f033874b066c96bc6752b8

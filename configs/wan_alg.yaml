@@ -1,0 +1,33 @@
+model:
+  path: "Wan-AI/Wan2.1-I2V-14B-480P-Diffusers"
+  dtype: "bfloat16"
+
+generation:
+  num_frames: 81
+  num_inference_steps: 50
+  guidance_scale: 5.0
+  height: 480
+  width: 832
+
+alg:
+  use_low_pass_guidance: True
+
+  lp_filter_type: "down_up"
+  lp_filter_in_latent: True
+
+  lp_blur_sigma: null
+  lp_blur_kernel_size: null
+  lp_resize_factor: 0.4
+
+  lp_strength_schedule_type: "interval"
+  schedule_blur_kernel_size: False
+
+  schedule_interval_start_time: 0.0
+  schedule_interval_end_time: 0.20
+
+  schedule_linear_start_weight: null
+  schedule_linear_end_weight: null
+  schedule_linear_end_time: null
+
+video:
+  fps: 16

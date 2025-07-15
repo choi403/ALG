@@ -1,0 +1,16 @@
+model:
+  path: "THUDM/CogVideoX-5b-I2V"
+  dtype: "bfloat16"
+
+generation:
+  height: null
+  width: null
+  num_frames: 49
+  num_inference_steps: 50
+  guidance_scale: 6.0
+
+alg:
+  use_low_pass_guidance: False
+
+video:
+  fps: 12

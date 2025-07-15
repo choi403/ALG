@@ -1,0 +1,16 @@
+model:
+  path: "Wan-AI/Wan2.1-I2V-14B-480P-Diffusers"
+  dtype: "bfloat16"
+
+generation:
+  num_frames: 81
+  num_inference_steps: 50
+  guidance_scale: 5.0
+  height: 480
+  width: 832
+
+alg:
+  use_low_pass_guidance: False
+
+video:
+  fps: 16
