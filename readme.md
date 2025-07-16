@@ -140,7 +140,7 @@ You can create new configuration files for these models by modifying the `model.
 
 ## 4. More Examples
 
-For more qualitative results and video comparisons, please visit the **[Gallery](https://choi403.github.io/ALG/gallery.html)** on our project page.
+For more qualitative results and video comparisons, please visit the **[Gallery](https://choi403.github.io/ALG/gallery/)** on our project page.
 
 ## Acknowledgement
 
