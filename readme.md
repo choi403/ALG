@@ -43,19 +43,28 @@ python run.py \
 **Generate a video with ALG enabled (more dynamic)**
 ```bash
 python run.py \
-  --config ./configs/cogvideox_alg.yaml \
-  --image_path ./assets/mammoth.png \
-  --prompt "Several giant wooly mammoths approach treading through a snowy meadow, their long wooly fur lightly blows in the wind as they walk." \
-  --output_path mammoth_alg.mp4
+  --config ./configs/wan_alg.yaml \
+  --image_path ./assets/city.png \
+  --prompt "A car chase through narrow city streets at night." \
+  --output_path city_alg.mp4
 ```
 
 **Generate a video without ALG (more static)**
 ```bash
 python run.py \
-  --config ./configs/cogvideox_default.yaml \
-  --image_path ./assets/mammoth.png \
-  --prompt "Several giant wooly mammoths approach treading through a snowy meadow, their long wooly fur lightly blows in the wind as they walk." \
-  --output_path mammoth_baseline.mp4
+  --config ./configs/wan_default.yaml \
+  --image_path ./assets/city.png \
+  --prompt "A car chase through narrow city streets at night." \
+  --output_path city_baseline.mp4
+```
+
+**Example prompts**
+```
+city.png: "A car chase through narrow city streets at night."
+snowboard.png: "A snowboarder doing a backflip off a jump."
+boat.png: "A group of people whitewater rafting in a canyon."
+helicopter.png: "A helicopter hovering over a rescue site."
+tennis.png: "A man swinging a tennis racquet at a tennis ball."
 ```
 
 ## Configuration
