@@ -39,6 +39,7 @@ python run.py \
 ```
 
 ### Examples
+We include a few example images in the asset folder, coupled with their corresponding prompts below.
 
 **Generate a video with ALG enabled (more dynamic)**
 ```bash
