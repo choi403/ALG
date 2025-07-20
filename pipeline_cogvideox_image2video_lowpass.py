@@ -649,7 +649,6 @@ class CogVideoXImageToVideoPipeline(DiffusionPipeline, CogVideoXLoraLoaderMixin)
             else:
                 encoded_lp = 1 / self.vae_scaling_factor_image * encoded_lp
 
-            # Permute to match standard latent format: [B, 1, latent_C, H_latent, W_latent]
             encoded_lp = encoded_lp.permute(0, 2, 1, 3, 4)
 
             # Calculate required latent frames based on output num_frames
@@ -682,13 +681,15 @@ class CogVideoXImageToVideoPipeline(DiffusionPipeline, CogVideoXLoraLoaderMixin)
 
         else:
             # --- Filter in Latent Space ---
+            orig_image_latents_perm = orig_image_latents.permute(0, 2, 1, 3, 4).contiguous()
             lp_image_latents = lp_utils.apply_low_pass_filter(
-                orig_image_latents, # Input has shape [B, F_padded, C, H, W]
+                orig_image_latents_perm, # Input has shape [B, C, F_padded, H, W]
                 filter_type=lp_filter_type,
                 blur_sigma=lp_blur_sigma,
                 blur_kernel_size=lp_blur_kernel_size,
                 resize_factor=lp_resize_factor,
             )
+            lp_image_latents = lp_image_latents.permute(0, 2, 1, 3, 4).contiguous()
             if self.transformer.config.patch_size_t is not None:
                 remainder = lp_image_latents.size(1) % self.transformer.config.patch_size_t
                 if remainder != 0:
