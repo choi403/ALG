@@ -1,8 +1,8 @@
-# Enhancing Motion Dynamics of Image-to-Video Models via Adaptive Low-Pass Guidance
+# Improving Motion in Image-to-Video Models via Adaptive Low-Pass Guidance
 
 [<u>`Project Page`</u>](https://choi403.github.io/ALG/) | [<u>`arXiv`</u>](https://arxiv.org/abs/2506.08456) | [<u>`Gallery`</u>](https://choi403.github.io/ALG/gallery/)
 
-Official implementation for [<u><b>Enhancing Motion Dynamics of Image-to-Video Models via Adaptive Low-Pass Guidance</b></u>](https://arxiv.org/abs/2506.08456)
+Official implementation for [<u><b>Improving Motion in Image-to-Video Models via Adaptive Low-Pass Guidance</b></u>](https://arxiv.org/abs/2506.08456)
 <br>
 <a href="https://choi403.github.io/"><u>June Suk Choi</u></a>,
 <a href="https://kyungmnlee.github.io/"><u>Kyungmin Lee</u></a>,
@@ -162,7 +162,7 @@ If you find our work useful for your research, please consider citing our paper:
 
 ```bibtex
 @article{choi2025alg,
-  title={Enhancing Motion Dynamics of Image-to-Video Models via Adaptive Low-Pass Guidance},
+  title={Improving Motion in Image-to-Video Models via Adaptive Low-Pass Guidance},
   author={Choi, June Suk and Lee, Kyungmin and Yu, Sihyun and Choi, Yisol and Shin, Jinwoo and Lee, Kimin},
   year={2025},
   journal={arXiv preprint arXiv:2506.08456},
